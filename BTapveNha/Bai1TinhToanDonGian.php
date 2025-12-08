@@ -9,11 +9,11 @@
 
 <form method="POST">
     <label>Số thứ nhất:</label>
-    <input type="number" name="so1" required>
+    <input type="number" name="số1" required>
     <br><br>
 
     <label>Số thứ hai:</label>
-    <input type="number" name="so2" required>
+    <input type="number" name="số2" required>
     <br><br>
 
     <label>Phép toán:</label>
@@ -33,8 +33,8 @@
 <?php
 if (isset($_POST['tinh'])) {
 
-    $a = $_POST['so1'];
-    $b = $_POST['so2'];
+    $a = $_POST['số1'];
+    $b = $_POST['số2'];
     $pt = $_POST['pheptoan'];
     $ketqua = "";
 
