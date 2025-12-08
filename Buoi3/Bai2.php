@@ -7,7 +7,7 @@
     </head>
 <body>
 
-    <form action="get">
+    <form method="get">
 
         <div>
             <label>Your Name: </label>
