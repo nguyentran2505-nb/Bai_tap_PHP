@@ -32,7 +32,7 @@ echo "</pre>";
         
     <table border="5" cellpadding="5" >
         <tr>
-            <th>Tên Sản Phẩm:</th>
+            <th>Tên Sản Phẩm</th>
             <th>Giá</th>
             <th>Mô Tả</th>
         </tr>
