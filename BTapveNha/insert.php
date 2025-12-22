@@ -7,9 +7,9 @@ $username = "root";
 $pwd = "";
 
 //Dữ liệu mẫu
-$tensp = "laptop ASUS";
-$gia = 18000000;
-$mota = "Mô tả của laptop ASUS";
+$tensp = $_POST['tensp'];
+$gia = $_POST['gia'];
+$mota = $_POST['mota'];
 
 //Mở kết nối
 $connection = new mysqli($host, $username, $pwd, $database);
@@ -20,3 +20,6 @@ $connection->execute_query($sql);
 $connection->close();
 
 echo "thêm mới thành công";
+
+?>
+
