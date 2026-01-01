@@ -46,6 +46,8 @@ $data = db_select($sql);
                 <td><?= $sp['mo_ta'] ?></td>
                 <td><?= $sp['ngay_tao']?></td>
                 <td>
+                    <a href ="edit.php?id=<?= $sp['id'] ?>">Sửa sản phẩm</a>
+                    <a href ="detail.php?id=<?= $sp['id'] ?>">Xem chi tiết</a>
                     <a onclick="confirm('Xác nhận xóa hả!!! Chắc chưa???')"
                         href ="delete.php?id=<?= $sp['id'] ?>">XÓA</a>
                 </td>

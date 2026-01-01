@@ -11,23 +11,23 @@ function get_db_connection(){
     return $connection;
 }
 //chỉ dùng cho câu select
-function db_select($sql){
-$host = "localhost"; //127.0.0.1
-$database = "study_php";
-$username = "root";
-$pwd = "";
+function db_select($sql, $params = []){
+// $host = "localhost"; //127.0.0.1
+// $database = "study_php";
+// $username = "root";
+// $pwd = "";
 
 $connection = get_db_connection();
-$data = $connection->execute_query($sql)->fetch_all(MYSQLI_ASSOC);
+$data = $connection->execute_query($sql, $params)->fetch_all(MYSQLI_ASSOC);
 
 $connection->close();
 return $data;
 }
 
 //Thực thi lệnh insert, update, delete
-function db_execute($sql){
+function db_execute($sql,$params=[]){
     $connection = get_db_connection();
-    $data = $connection->execute_query($sql);
+    $data = $connection->execute_query($sql, $params);
     //Đóng kết nối
     $connection->close();
 
